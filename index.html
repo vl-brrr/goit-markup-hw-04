@@ -20,7 +20,7 @@
       <nav class="navigation">
         <a href="./index.html" class="logo link">Web<span class="logo-span">Studio</span></a>
         <ul class="list">
-          <li class="item"><a href="./index.html" class="navigation-link link">Studio</a></li>
+          <li class="item"><a href="./index.html" class="navigation-link link current">Studio</a></li>
           <li class="item"><a href="./portfolio.html" class="navigation-link link">Portfolio</a></li>
           <li class="item"><a href="" class="navigation-link link">Contacts</a></li>
         </ul>
@@ -39,7 +39,7 @@
     <section class="hero-page">
       <div class="container">
         <h1 class="hero-page-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-page-button">Order Service</button>
+        <button type="button" class="hero-page-button" data-modal-open>Order Service</button>
       </div>
     </section>
     <!--Section 1-->
@@ -364,6 +364,18 @@
       </div>
     </div>
   </footer>
+
+  <!--Modal window-->
+  <div class="backdrop" data-modal>
+    <div class="modal">
+      <button class="modal-btn" type="button" data-modal-close>
+        <svg class="modal-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
